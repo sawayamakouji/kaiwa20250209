@@ -1,0 +1,75 @@
+/* カスタムフォント */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+/* カスタムアニメーション */
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* カスタムカラー */
+.text-primary {
+    color: #1a56db;
+}
+
+.bg-primary {
+    background-color: #1a56db;
+}
+
+/* レスポンシブ調整 */
+@media (max-width: 768px) {
+    .hero-text {
+        font-size: 1.8rem;
+    }
+}
+
+/* アクセシビリティ改善 */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+/* コンテンツセクション共通スタイル */
+.section {
+    padding: 4rem 0;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #1a56db;
+}
+
+/* カード共通スタイル */
+.card {
+    background: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+}
